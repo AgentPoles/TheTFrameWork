@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/answered"
+            android:icon="@drawable/soccer"
+            android:title="Answered" />
+        <item
+            android:id="@+id/unanswered"
+            android:icon="@drawable/unan"
+            android:title="Unanswered" />
+        <item
+            android:id="@+id/shot"
+            android:icon="@drawable/shot"
+            android:title="shot!" />
+        <item
+            android:id="@+id/user_settings"
+            android:icon="@drawable/ic_user"
+            android:title="Profile" />
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/reshare"
+                android:title="Share" />
+            <item
+                android:id="@+id/explore"
+                android:icon="@drawable/explore"
+                android:title="explore" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/info"
+                android:title="about" />
+            <item
+                android:id="@+id/ss"
+                android:title=""
+                />
+            <item
+                android:title="yahweh behind it all!" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#56c0aa10"
+    android:padding="10dp"
+    android:scrollbars="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/reliall"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/wespee"
+            android:layout_centerHorizontal="true"
+            android:textColor="#0a2149"
+            android:text="Hi. please take your place in the \n framework"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/allinfo"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_below="@+id/wespee"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:id="@+id/namey"
+        android:textColor="#0a2149"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            app:srcCompat="@drawable/namet"
+            android:layout_gravity="center_vertical"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="#0a2149"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_gravity="center_vertical"
+                android:id="@+id/ednamey"
+                android:textColor="#0a2149"
+                android:textColorHint="#0a2149"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:drawable/toast_frame"
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="#ffffff"
+                android:layout_height="wrap_content"
+                android:hint="Choose your name"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/emailo"
+        android:layout_below="@+id/namey"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            app:srcCompat="@drawable/gmail"
+            android:layout_gravity="center_vertical"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="#0a2149"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_gravity="center_vertical"
+                android:id="@+id/edemailo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@android:drawable/toast_frame"
+                android:layout_width="match_parent"
+                android:textColorHint="#0a2149"
+                android:inputType="textEmailAddress"
+                android:textColor="#0a2149"
+                android:backgroundTint="#ffffff"
+                android:layout_height="wrap_content"
+                android:hint="enter your email"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/numberlo"
+            android:layout_below="@+id/emailo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                app:srcCompat="@drawable/smartphone"
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#0a2149"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/ednumber"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@android:drawable/toast_frame"
+                    android:layout_width="match_parent"
+                    android:textColorHint="#0a2149"
+                    android:inputType="number"
+                    android:textColor="#0a2149"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:hint="phone number"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/classo"
+            android:layout_below="@+id/numberlo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                app:srcCompat="@drawable/studeny"
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#0a2149"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edclassi"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:drawable/toast_frame"
+                    android:layout_width="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#0a2149"
+                    android:textColorHint="#0a2149"
+                    android:backgroundTint="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:hint=" enter class or group name"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/classcode"
+            android:visibility="visible"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_below="@+id/allinfo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="italic"
+            android:text=" for students, your class name is YOUR SCHOOL_YOUR CLASS OR LEVEL e.g UNIBEN_EEE300L or UBTH_JSS3B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/goin"
+        android:layout_below="@+id/reliall"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:src="@drawable/goahead"
+        android:clickable="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+        <LinearLayout
+            android:id="@+id/linlrogin"
+            android:orientation="vertical"
+            android:layout_below="@+id/goin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/logrin"
+
+        android:layout_marginLeft="20dp"
+        android:textColor="#0a4149"
+        android:text="Already have an account? go in!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:text="hi yoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <ImageView
+        android:id="@+id/loading"
+
+        android:layout_below="@+id/linlrogin"
+        app:srcCompat="@drawable/slug"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+        <ImageView
+            android:layout_below="@+id/linlrogin"
+            android:layout_alignParentBottom="true"
+            android:layout_width="150dp"
+            android:layout_height="250dp" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relinowauthenti"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/running"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/cycle"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+        <TextView
+            android:layout_below="@+id/running"
+            android:layout_margin="15dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="Ann succesfully prepared your account, now waiting for google...\n this may take a while but shouldnt take too long, if it does please check your NETWORK CONNECTION!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    </FrameLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

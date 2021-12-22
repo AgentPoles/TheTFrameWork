@@ -1,0 +1,168 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mycompany.myapp.thetframework.Tips">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tipsview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+            <android.support.design.widget.FloatingActionButton
+                app:srcCompat="@drawable/edit"
+                android:id="@+id/tipsolve"
+                android:layout_width="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                app:backgroundTint="@color/chatmilk"
+                android:layout_height="45dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/tiprelenter"
+                android:paddingTop="0dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="bottom"
+                android:background="@color/black_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/tipdownian"
+                    app:srcCompat="@drawable/goback"
+                    android:visibility="gone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <EditText
+                    android:id="@+id/tipedicoursetitle"
+                    android:background="@android:drawable/edit_text"
+                    android:hint="Enter subject title"
+                    android:layout_below="@id/tipdownian"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#0a2149"
+                    android:textColorHint="#0a2149"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:id="@+id/tipcircleholder"
+                    android:gravity="bottom"
+                    android:layout_alignBottom="@+id/tipedicoursetitle"
+                    android:layout_toRightOf="@+id/tipedicoursetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/tipimagerview"
+                        android:layout_width="34dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/imageb"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="34dp"
+                        />
+                    <ImageView
+                        android:id="@+id/tipimagespinner"
+                        app:srcCompat="@drawable/deleteit"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <TextView
+                        android:id="@+id/tiptrestee"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignBottom="@+id/tipimagerview"
+                        android:layout_toRightOf="@+id/tipimagerview"
+                        android:text="25.."
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/backit"
+                    android:id="@+id/tippequenny"
+                    android:layout_below="@+id/tipedicoursetitle"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:background="@android:color/transparent"
+                        android:id="@+id/tippintroaski"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:hint="share useful tips"
+                        android:textColorHint="#0a2149"
+                        android:textColor="#0a2149"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginEnd="7dp"
+                        android:paddingLeft="10dp"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/tipgetimage"
+                        android:padding="3dp"
+                        android:background="@drawable/tipbacki"
+                        android:layout_marginTop="7dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginBottom="3dp"
+                        android:layout_gravity="end|right|bottom"
+                        app:srcCompat="@drawable/gallery"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/tipwingy"
+                    app:srcCompat="@drawable/beetle"
+                    android:layout_below="@id/tipdownian"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:visibility="gone"
+                    android:background="@color/black_overlay"
+                    android:layout_below="@+id/tippequenny"
+                    android:id="@+id/tipmotif"
+                    android:textColor="#0a2149"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:textIsSelectable="true"
+                    android:text="you can add an image by touching the gallery symbol in the question box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/tipsendquestion"
+                    android:layout_width="45dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/sendee"
+                    android:layout_alignBottom="@+id/tipedicoursetitle"
+                    android:layout_alignParentRight="true"
+                    app:backgroundTint="@color/chatmilk"
+                    android:layout_marginLeft="0dp"
+                    android:layout_height="45dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

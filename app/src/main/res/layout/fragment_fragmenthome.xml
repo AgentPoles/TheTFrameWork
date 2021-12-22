@@ -1,0 +1,454 @@
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mycompany.myapp.thetframework.Fragmenthome">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/groupimageback"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@mipmap/atwork"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+        <ImageView
+            android:id="@+id/rollingthrough"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:layout_gravity="right|end"
+            app:srcCompat="@drawable/spinc"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/groupimage"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@mipmap/atwork"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <RelativeLayout
+                android:id="@+id/groupdetails"                android:gravity="bottom"
+                android:layout_alignBottom="@+id/groupimage"
+                android:background="@color/blacki_overlaye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/groupname"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAllCaps="true"
+                    android:text="The engineers"
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/numberofmembers"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/groupname"
+                    android:text="22"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/wordparticipant"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignBaseline="@+id/numberofmembers"
+                    android:layout_toRightOf="@+id/numberofmembers"
+                    android:layout_below="@+id/groupname"
+                    android:textStyle="italic"
+                    android:text="participants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <ImageView
+                    android:id="@+id/editgroupname"
+                    android:layout_alignBottom="@+id/groupname"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/editee"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp" />
+                <ImageView
+                    android:id="@+id/usersearch"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/editgroupname"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/search"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </RelativeLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/groupmakeupnest"
+            android:visibility="gone"
+            android:layout_below="@+id/groupdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <GridLayout
+            android:id="@+id/groupmakeup"
+            android:rowCount="1"
+            android:columnCount="4"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:background="@drawable/overlayee"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:textAlignment="center"
+                    android:maxLines="2"
+                    android:maxWidth="80dp"
+                    android:textColor="@android:color/white"
+                    android:text="News and Information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:background="@drawable/overlayee"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:maxLines="2"
+                    android:layout_marginTop="15dp"
+                    android:maxWidth="80dp"
+                    android:textColor="@android:color/white"
+                    android:text="status"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:background="@drawable/overlayee"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:textAlignment="center"
+                    android:maxLines="2"
+                    android:maxWidth="80dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/white"
+                    android:text="Questions"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:background="@drawable/overlayee"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:textAlignment="center"
+                    android:maxLines="2"
+                    android:maxWidth="80dp"
+                    android:layout_marginTop="15dp"
+                    android:width="80dp"
+                    android:textColor="@android:color/white"
+                    android:text="Documents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </GridLayout>
+</android.support.v4.widget.NestedScrollView>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:id="@+id/editgroupimage"
+            android:layout_above="@+id/groupdetails"
+            android:src="@drawable/ic_menu_camera"
+            app:backgroundTint="@color/blacki_overlaye"
+            android:layout_alignParentRight="true"
+            app:layout_anchor="@id/groupimage"
+            android:layout_alignParentEnd="true"
+            app:layout_anchorGravity="bottom|end|right"
+            android:layout_height="50dp" />
+        <android.support.v4.widget.NestedScrollView
+            android:layout_below="@+id/groupmakeupnest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/youandothers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/yourdetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/yourimage"
+        app:srcCompat="@drawable/personel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/sayingyou"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_margin="7dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="You"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/yourquotes"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/yourimage"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Hi dear, "
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:text="whats the latest gist about you?"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:layout_marginRight="18dp"
+        app:srcCompat="@drawable/editor"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sayingyou"
+        android:clickable="true"
+        android:id="@+id/yoursettings"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="20dp"/>
+    <ImageView
+        android:layout_margin="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/timeb"
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+
+</RelativeLayout>
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/introothers"
+                    android:layout_below="@+id/yourdetails"
+                    android:text=" check out other members"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        <GridView
+            android:layout_below="@+id/introothers"
+            android:numColumns="4"
+            android:id="@+id/personsgrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </GridView>
+                <ImageView
+                    android:id="@+id/more"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/down"
+                    android:layout_below="@+id/personsgrid"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp">
+
+                </ImageView>
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/allpeoplerel"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/upli"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"></LinearLayout>
+        <ImageView
+            android:layout_below="@+id/upli"
+            android:id="@+id/less"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            app:srcCompat="@drawable/up"
+            android:layout_marginBottom="10dp"
+            android:layout_height="25dp" />
+        <FrameLayout
+            android:layout_below="@+id/less"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <GridView
+            android:visibility="gone"
+            android:background="@android:color/white"
+            android:numColumns="4"
+            android:id="@+id/personsgridb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </GridView>
+
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:id="@+id/otherprofilerel"
+        android:background="@color/blacki_overlaye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/otherprofileback"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            app:srcCompat="@drawable/goback"
+            android:layout_marginBottom="10dp"
+            android:layout_height="25dp" />
+        <RelativeLayout
+            android:background="@drawable/groupimageback"
+            android:id="@+id/otherpersonrel"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/otherimage"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_account_circle_black_24dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/otherimage"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/smartphone"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/smartphone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:id="@+id/gmail"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/gmail"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:id="@+id/sms"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/sms"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:background="@drawable/groupimageback"
+            android:textStyle="bold"
+            android:id="@+id/othername"
+            android:layout_below="@+id/otherpersonrel"
+            android:layout_centerHorizontal="true"
+            android:text="David Illenwanbor Oshioke"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:background="@drawable/groupimageback"
+            android:layout_below="@+id/othername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/statusbare"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/hinth"
+                android:textAllCaps="true"
+                android:text="Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/otherstatus"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"
+                android:layout_toRightOf="@+id/hinth"
+                android:text=" Hello everyone, its cool to be here!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

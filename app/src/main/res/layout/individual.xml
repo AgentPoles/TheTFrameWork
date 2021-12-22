@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/persontotal"
+    android:layout_width="90dp"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="130dp">
+    <LinearLayout
+        android:background="@drawable/groupimageback"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/personimage"
+    android:layout_margin="10dp"
+    app:srcCompat="@drawable/personel"
+    android:layout_gravity="center"
+    android:layout_width="50dp"
+    android:layout_height="50dp" />
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:id="@+id/personname"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxWidth="70dp"
+        android:ellipsize="marquee"
+        android:text="sssssssssssssssssssssssssssssssssssss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/personauthority"
+        android:text="Admin"
+        android:visibility="invisible"
+        android:layout_marginBottom="3dp"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/individualviewed"
+             android:layout_margin="5dp"
+            app:srcCompat="@drawable/leaf"
+             android:layout_gravity="end|right"
+            android:layout_width="13dp"
+            android:layout_height="13dp" />
+</LinearLayout>
+</LinearLayout>

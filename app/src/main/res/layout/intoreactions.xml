@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/lred"
+        android:visibility="visible"
+        android:background="@android:drawable/editbox_background"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:layout_width="match_parent">
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="70dp"
+            android:text="person name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bodygo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:ellipsize="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:text="dddddddddtttttttttttttttttttttttrrrrrrrrrrddddddddddddddeffffffffffffggggggggdddddghhhhgggggggggggggggggggggggggggggggggggggggg of InformJSJJSSJJSJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ            aSJJJJJSSJHSHSLLLSLLSLLSSSLSLLSLSLSKKtion "
+            android:layout_marginLeft="70dp"/>
+        <ImageView
+            app:srcCompat="@drawable/personel"
+            android:id="@+id/courseo"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/groupimageback"
+            android:layout_width="60dp"
+            android:textAlignment="center"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/dateeg"
+            android:textColor="#000000"
+            android:text="11/23/34"
+            android:textSize="10sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bodygo"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@android:color/holo_orange_dark"
+            android:id="@+id/timeeg"
+            android:text="7:42AM"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/relother"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:elevation="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal"
+        card_view:cardBackgroundColor="#66dddddd"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/nameinitial"
+            android:background="@drawable/green"
+            android:text="K"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:paddingTop="3dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/usernameee"
+            android:layout_toRightOf="@+id/nameinitial"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="kelvin ekkkkkwingarerrrr"
+            android:textSize="11sp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="#808060"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/comans"
+            android:text="comment"
+            android:layout_alignBottom="@+id/usernameee"
+            android:layout_toRightOf="@+id/alltd"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#457383"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:layout_margin="2dp"
+        android:id="@+id/answerbody"
+        android:textSize="15sp"
+        android:textColor="#0a2149"
+        android:textStyle="normal"
+        android:text="sssllssdjdjddlllhhhhhhhhhhhhhhhhhhhhhhhhhhd"
+        android:layout_below="@+id/nameinitial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:layout_below="@+id/answerbody"
+            android:id="@+id/usernumber"
+            android:layout_alignParentRight="true"
+            android:text="09837363555555555333"
+            android:textSize="9sp"
+            android:singleLine="true"
+            android:layout_gravity="start"
+            android:ellipsize="end"
+            android:layout_marginRight="8dp"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+        <ImageView
+            android:layout_alignBottom="@+id/alltd"
+            android:layout_alignRight="@+id/comans"
+            android:visibility="visible"
+            android:id="@+id/answerpending"
+            app:srcCompat="@drawable/timeb"
+            android:layout_marginLeft="3dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    <LinearLayout
+        android:id="@+id/alltd"
+        android:layout_below="@+id/answerbody"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="0dp"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:id="@+id/dater"
+                android:textColor="@android:color/holo_orange_dark"
+                android:text="monday 4 feburuary 2019"
+                android:textSize="9sp"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+        <TextView
+            android:textSize="15sp"
+            android:text="|"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/useredetails"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:id="@+id/timer"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:text="7 65AM"
+                    android:textSize="9sp"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="@drawable/imageholdeera"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/relimagea"
+            android:layout_below="@id/card_view"
+            android:padding="3dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/anspending"
+                android:scaleType="fitXY"
+                android:layout_margin="4dp"
+                app:srcCompat="@drawable/timeb"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:id="@+id/alltdace"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:id="@+id/daterab"
+                    android:gravity="right|end"
+                    android:layout_marginRight="1dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="monday 4 feburuary 2019"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="11dp" />
+                <TextView
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:id="@+id/timerab"
+                    android:gravity="end|right"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:text="7 65AM"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="11dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_below="@+id/alltdace"
+                android:scaleType="fitXY"
+                android:id="@+id/recyclerimageanswwera"
+                android:maxHeight="210dp"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+            <ProgressBar
+                android:contentDescription="for reaload"
+                android:visibility="gone"
+                android:id="@+id/answersprintabarothers"
+                android:layout_centerInParent="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/answersprinta"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_settings_backup_restore_black_24dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:id="@+id/textimagea"
+                android:text="dhddhhddhdddddldlldluuuuuuuuuuuuuuuuuuuuu"
+                android:textSize="13sp"
+                android:gravity="bottom"
+                android:layout_marginLeft="4dp"
+                android:layout_below="@+id/recyclerimageanswwera"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:id="@+id/relyou"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_viewa"
+        android:elevation="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardBackgroundColor="#6695dd10"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/comansa"
+                    android:text="comment"
+                    android:singleLine="true"
+                    android:layout_alignRight="@+id/alltda"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#457383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <TextView
+                android:layout_margin="3dp"
+                android:id="@+id/answerbodya"
+                android:textSize="15sp"
+                android:textColor="#0a2149"
+                android:textStyle="normal"
+                android:minWidth="140dp"
+                android:text="se33333333333333333333tttt"
+                android:layout_below="@+id/comansa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/alltda"
+                android:layout_alignRight="@+id/answerbodya"
+                android:layout_below="@+id/answerbodya"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:textAlignment="textEnd"
+                        android:id="@+id/datera"
+                        android:layout_marginRight="1dp"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:text="monday 4 feburuary 2019"
+                        android:textSize="9sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="11dp" />
+                <TextView
+                    android:textSize="15sp"
+                    android:text="|"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="2dp"
+                            android:layout_gravity="start|center_vertical"
+                            android:textAlignment="textStart"
+                            android:id="@+id/timera"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:text="7465AM"
+                            android:textSize="9sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="11dp" />
+            </LinearLayout>
+            </RelativeLayout>
+            <ImageView
+                android:layout_alignBottom="@+id/alltda"
+                android:visibility="gone"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/youranswerpending"
+                app:srcCompat="@drawable/timeb"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="@drawable/imageholderb"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/relimageb"
+            android:layout_below="@id/card_viewa"
+            android:padding="3dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imageanspending"
+                android:layout_margin="4dp"
+                app:srcCompat="@drawable/timeb"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:id="@+id/alltdac"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:id="@+id/daterac"
+                    android:gravity="right|end"
+                    android:layout_marginRight="1dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="monday 4 feburuary 2019"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="11dp" />
+                    <TextView
+                        android:layout_gravity="end"
+                        android:textAlignment="textEnd"
+                        android:id="@+id/timerac"
+                        android:gravity="end|right"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:text="7 65AM"
+                        android:textSize="9sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="11dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_below="@+id/alltdac"
+                android:scaleType="fitXY"
+                android:id="@+id/recyclerimageanswwerb"
+                android:maxHeight="210dp"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+
+            <ProgressBar
+                android:contentDescription="for reaload"
+                android:visibility="gone"
+                android:id="@+id/answersprintebaryou"
+                android:layout_centerInParent="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/answersprinte"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_settings_backup_restore_black_24dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:id="@+id/textimageb"
+                android:text="dhddhhddhdddddldlldluuuuuuuuuuuuuuuuuuuuu"
+                android:textSize="13sp"
+                android:gravity="bottom"
+                android:layout_marginLeft="4dp"
+                android:layout_below="@+id/recyclerimageanswwerb"
+                android:textColor="@color/colorAccent"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

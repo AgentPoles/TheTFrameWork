@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mycompany.myapp.thetframework.Answered">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/answeredquestionsview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    <android.support.design.widget.FloatingActionButton
+        app:srcCompat="@drawable/cromments"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+      app:backgroundTint="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+
+    </FrameLayout>

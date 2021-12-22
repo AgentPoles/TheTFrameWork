@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#ffffff">
+
+    <ImageView
+        app:srcCompat="@drawable/oops"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:textColor="#0a2149"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:text="@string/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginLeft="0dp"
+        android:text="Please Re-check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/vemailb"
+        android:padding="5dp"
+        android:background="@drawable/groupimageback"
+        android:textColor="#Be574e"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Re-enter email"
+        android:textColorHint="#be574e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ve"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/goahead"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+</LinearLayout>

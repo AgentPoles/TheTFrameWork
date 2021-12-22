@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#659900</color>
+    <color name="colorPrimaryDark">#b8b3b0</color>
+    <color name="colorAccent">#0a2149</color>
+    <color name="black_overlay">#99b8b3b0</color>
+    <color name="blacki_overlay">#bb000102</color>
+    <color name="blacki_overlaye">#55000102</color>
+    <color name="splash">#ebebeb</color>
+    <color name="whitee">#ffffff</color>
+    <color name="chatgreen">#4465bb23</color>
+    <color name="chatmilk">#eee6a4</color>
+    <color name="transchatmilk">#aaeee6a4</color>
+</resources>

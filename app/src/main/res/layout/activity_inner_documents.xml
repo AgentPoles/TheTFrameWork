@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mycompany.myapp.thetframework.InnerDocuments">
+
+    <!-- TODO: Update blank fragment layout -->
+   <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:id="@+id/filenamee"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/totalname"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="#eee6a4"
+            android:text="Docs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <GridView
+        android:layout_below="@+id/filenamee"
+        android:id="@+id/docgride"
+        android:numColumns="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </GridView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/adddocument"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/adddoc"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/relinnerdocument"
+        android:visibility="gone"
+        android:background="@color/blacki_overlaye"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/adddocumenttalk"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="add a new document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+<ImageView
+    android:id="@+id/canceldocument"
+    android:layout_marginLeft="10dp"
+    android:layout_alignBottom="@+id/adddocumenttalk"
+    android:layout_toRightOf="@id/adddocumenttalk"
+    app:srcCompat="@drawable/deleteit"
+    android:layout_width="30dp"
+    android:layout_height="30dp" />
+        <EditText
+            android:id="@+id/edidocumentname"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/adddocumenttalk"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Document name"
+            android:layout_marginBottom="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/addnewdocument"
+            app:srcCompat="@drawable/goahead"
+            android:layout_alignBottom="@+id/edidocumentname"
+            android:layout_toRightOf="@id/edidocumentname"
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+</RelativeLayout>
+

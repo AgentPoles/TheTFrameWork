@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:id="@+id/lblue"
+        android:visibility="visible"
+        android:layout_height="90dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/bodyb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:text=""
+            android:layout_marginLeft="70dp"/>
+        <TextView
+            android:id="@+id/courseb"
+            android:text="eee554"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tipor"
+            android:layout_width="60dp"
+            android:paddingTop="20dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:layout_height="60dp" />
+        <!--<TextView-->
+        <!--android:textStyle="italic"-->
+        <!--android:textSize="10sp"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="By:"/>-->
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/timeeb"
+            android:id="@+id/unreadb"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/leaf"
+            android:layout_marginLeft="40dp"
+            android:textColor="@android:color/white"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <!--<TextView-->
+        <!--android:id="@+id/author"-->
+        <!--android:textStyle="normal"-->
+        <!--android:textSize="10sp"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:text="Prophdddddet Tepuhhhhhhhhhhhhhhm"/>-->
+        <TextView
+            android:id="@+id/dateeb"
+            android:textColor="#000000"
+            android:text="11/23/34"
+            android:textSize="10sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/pendingquestionb"
+            app:srcCompat="@drawable/timeb"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/dateeb"
+            android:layout_alignBottom="@+id/dateeb"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:id="@+id/timeeb"
+            android:text="7:42AM"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lgreen"
+        android:visibility="visible"
+        android:layout_height="90dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/bodyr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:text="Titlddddddddddddddefffffffffffffggggggggdddddghhhhgggggggggggggggggggggggggggggggggggggggg of InformJSJJSSJJSJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ            aSJJJJJSSJHSHSLLLSLLSLLSSSLSLLSLSLSKKtion "
+            android:layout_marginLeft="70dp"/>
+        <TextView
+            android:id="@+id/courser"
+            android:text="eee554"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tipog"
+            android:layout_width="60dp"
+            android:paddingTop="20dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:layout_height="60dp" />
+        <!--<TextView-->
+        <!--android:textStyle="italic"-->
+        <!--android:textSize="10sp"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="By:"/>-->
+        <ImageView
+            android:id="@+id/unreadr"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/timeer"
+            app:srcCompat="@drawable/leaf"
+            android:layout_marginLeft="40dp"
+            android:textColor="@android:color/white"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <!--<TextView-->
+        <!--android:id="@+id/author"-->
+        <!--android:textStyle="normal"-->
+        <!--android:textSize="10sp"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:text="Prophdddddet Tepuhhhhhhhhhhhhhhm"/>-->
+        <TextView
+            android:id="@+id/dateer"
+            android:textColor="#000000"
+            android:text="11/23/34"
+            android:textSize="10sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/pendingquestionr"
+            app:srcCompat="@drawable/timeb"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/dateer"
+            android:layout_alignBottom="@+id/dateer"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:id="@+id/timeer"
+            android:text="7:42AM"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lred"
+        android:visibility="visible"
+        android:layout_height="90dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/bodyg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:text="ddddddddddeffffffffffffggggggggdddddghhhhgggggggggggggggggggggggggggggggggggggggg of InformJSJJSSJJSJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ            aSJJJJJSSJHSHSLLLSLLSLLSSSLSLLSLSLSKKtion "
+            android:layout_marginLeft="70dp"/>
+        <TextView
+            android:id="@+id/courseg"
+            android:text="eee554"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tipob"
+            android:layout_width="60dp"
+            android:paddingTop="20dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:layout_height="60dp" />
+        <!--<TextView-->
+        <!--android:textStyle="italic"-->
+        <!--android:textSize="10sp"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="By:"/>-->
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/timeeg"
+            android:id="@+id/unreadg"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/leaf"
+            android:layout_marginLeft="40dp"
+            android:textColor="@android:color/white"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <!--<TextView-->
+        <!--android:id="@+id/author"-->
+        <!--android:textStyle="normal"-->
+        <!--android:textSize="10sp"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:text="Prophdddddet Tepuhhhhhhhhhhhhhhm"/>-->
+        <TextView
+            android:id="@+id/dateeg"
+            android:textColor="#000000"
+            android:text="11/23/34"
+            android:textSize="10sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/pendingquestiong"
+            app:srcCompat="@drawable/timeb"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/dateeg"
+            android:layout_alignBottom="@+id/dateeg"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:id="@+id/timeeg"
+            android:text="7:42AM"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</FrameLayout>

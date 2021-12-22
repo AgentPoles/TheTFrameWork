@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_margin="3dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/singleinnforel"
+        android:backgroundTint="#ffffff"
+        android:background="@android:drawable/editbox_background"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="102dp">
+    <ImageView
+        app:srcCompat="@drawable/informationin"
+        android:id="@+id/headimage"
+        android:layout_margin="10dp"
+        android:layout_width="40dp"
+        android:layout_height="60dp" />
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/star"
+        android:id="@+id/star"
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+    <TextView
+        android:id="@+id/attachment"
+        android:visibility="gone"
+        android:text="approved!"
+        android:textSize="8sp"
+        android:layout_alignBottom="@+id/timeego"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="57dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/timeego"
+        android:textSize="10sp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/star"
+        android:layout_alignParentRight="true"
+        android:text="time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<TextView
+    android:layout_marginRight="30dp"
+    android:maxLines="3"
+    android:textColor="@color/colorAccent"
+    android:ellipsize="end"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="20dp"
+    android:layout_toRightOf="@+id/headimage"
+    android:id="@+id/newsheadline"
+    android:textSize="13sp"
+    android:text="News Headlines elelellnnnnnnnnnnnnneelel drlkeeeeeeeeeeeer rrrlr;r;rroeoepeppepeppe epe ekp ;kfk epkr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/newsdate"
+        android:textColor="#000000"
+        android:text="11/23/34"
+        android:layout_marginTop="6dp"
+        android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/writer"
+            android:textColor="#000000"
+            android:layout_marginLeft="7dp"
+            android:layout_alignBottom="@+id/newsdate"
+            android:layout_toRightOf="@+id/headimage"
+            android:text="writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/inforeadstate"
+            app:srcCompat="@drawable/leaf"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/timeego"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <ImageView
+            app:srcCompat="@drawable/timeb"
+            android:layout_marginRight="5dp"
+            android:layout_alignBottom="@+id/newsdate"
+           android:layout_toLeftOf="@+id/newsdate"
+            android:id="@+id/pendinginfo"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+</RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/headimageb"
+            android:layout_margin="10dp"
+            android:background="@drawable/backing"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/star"
+            android:visibility="gone"
+            android:id="@+id/starb"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <ImageView
+            android:visibility="gone"
+            app:srcCompat="@drawable/attach"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="42dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:textSize="13sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/starb"
+            android:layout_alignParentRight="true"
+            android:text="time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/headimageb"
+            android:id="@+id/newsheadlineb"
+            android:textSize="13sp"
+            android:text="@string/verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/newsdateb"
+            android:textColor="#000000"
+            android:text="11/23/34"
+            android:textSize="10sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/newsheadlineb"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/writername"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="7dp"
+            android:layout_alignBottom="@+id/newsdateb"
+            android:layout_toRightOf="@+id/headimageb"
+            android:text="writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/imporandattach"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/writername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/important"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000000"
+                    android:text="this is very important!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    app:srcCompat="@drawable/star"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000000"
+                    android:text="touch to view attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    app:srcCompat="@drawable/attach"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/upandown"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imporandattach"
+            app:srcCompat="@drawable/upi"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/hideit"
+            android:text="hide"
+            android:layout_marginRight="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/upandown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/hideit"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="Reactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

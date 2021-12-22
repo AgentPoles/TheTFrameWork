@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "560477380104",
+    "firebase_url": "https://tframework-4524b.firebaseio.com",
+    "project_id": "tframework-4524b",
+    "storage_bucket": "tframework-4524b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560477380104:android:064af25aa9bf5044",
+        "android_client_info": {
+          "package_name": "com.mycompany.myapp.thetframework"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560477380104-sb92ceg5ufnlp9unr3s4eu4ta91pes8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwuStoVaxTvTSXgZ7SC0kJhyjF4ZhWT5A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

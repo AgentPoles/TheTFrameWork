@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".YourSettings"
+    tools:showIn="@layout/activity_your_settings">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <!--<LinearLayout-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:id="@+id/linuserimage"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--&lt;!&ndash;<FrameLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+    <!--&lt;!&ndash;<de.hdodenhof.circleimageview.CircleImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/userimage"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/ic_account_circle_black_24dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="140dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="140dp" />&ndash;&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@drawable/backii"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/spinc"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/srollingthrough"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="30dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="30dp" />&ndash;&gt;-->
+    <!--&lt;!&ndash;<android.support.design.widget.FloatingActionButton&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="bottom|right"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/chooseuserphoto"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:backgroundTint="@color/blacki_overlaye"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/ic_menu_camera"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="50dp" />&ndash;&gt;-->
+        <!--&lt;!&ndash;</FrameLayout>&ndash;&gt;-->
+    <!--</LinearLayout>-->
+    <RelativeLayout
+        android:id="@+id/layerone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/username"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:hint="Paul Ahaimogu lawrence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layertwo"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/layerone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageusernumber"
+            app:srcCompat="@drawable/phone"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@+id/imageusernumber"
+            android:id="@+id/usernumber"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_toRightOf="@id/imageusernumber"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:hint="08022334459"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layerthree"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/layertwo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageuseremail"
+            app:srcCompat="@drawable/mail"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:id="@+id/useremaile"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_toRightOf="@id/imageuseremail"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:hint="lawrence@12.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layerfour"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/layerthree"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageuserclass"
+            app:srcCompat="@drawable/studeny"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/hintm"
+            android:layout_toRightOf="@id/imageuserclass"
+            android:textAllCaps="true"
+            android:text="@string/classorgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="7dp"
+            android:id="@+id/userclass"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_toRightOf="@id/hintm"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:hint="eee500l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layerfive"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/layerfour"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageuserdob"
+            app:srcCompat="@drawable/baby"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/hinta"
+            android:layout_toRightOf="@id/imageuserdob"
+            android:textAllCaps="true"
+            android:text="D.O.B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="7dp"
+            android:id="@+id/userdob"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_toRightOf="@id/hinta"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:hint="AUG 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layersix"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/layerfive"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageuserskill"
+            app:srcCompat="@drawable/skill"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/hintb"
+            android:layout_toRightOf="@id/imageuserskill"
+            android:textAllCaps="true"
+            android:text="Skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:id="@+id/userskill"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_toRightOf="@id/hintb"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:hint="Photographer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/layerseven"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/layersix"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/hintc"
+            android:textAllCaps="true"
+            android:text="Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/userstatus"
+            android:cursorVisible="true"
+            android:textSize="16sp"
+            android:padding="6sp"
+            android:background="@drawable/groupimageback"
+            android:layout_toRightOf="@id/hintc"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:hint=" Hi, whats the latest gist about you?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.v4.widget.NestedScrollView>
+
+

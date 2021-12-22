@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/systeminfo"
+        android:layout_marginLeft="7dp"
+        app:srcCompat="@drawable/ic_systeminfo"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_toRightOf="@+id/systeminfo"
+        android:id="@+id/hinto"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:text="The complete message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/timea"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/star"
+        android:layout_alignParentRight="true"
+        android:text="time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/hinto"
+        android:layout_marginRight="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/fullnews"
+        android:textSize="15sp"
+        android:text="News Headlines elelellnnnnnnnnnnnnneelel drlkeeeeeeeeeeeer rrrlr;r;rroeoepeppepeppe epe ekp ;kfk epkr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/linla"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/fullnews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        app:srcCompat="@drawable/star"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:text="this message is very important!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/linla"
+        android:id="@+id/newsdate"
+        android:textColor="#000000"
+        android:text="11/23/34"
+        android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/writera"
+        android:layout_below="@+id/linla"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="15dp"
+        android:layout_alignBottom="@+id/newsdate"
+        android:layout_toRightOf="@+id/headimage"
+        android:text="writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+</RelativeLayout>

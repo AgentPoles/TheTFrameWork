@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/infotalk"
+        android:textStyle="bold"
+        android:text="This is how your info will appear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/infotext"
+        android:background="@color/blacki_overlaye"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/infotalk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/systeminfob"
+            android:layout_marginLeft="7dp"
+            app:srcCompat="@drawable/ic_systeminfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_toRightOf="@+id/systeminfob"
+            android:id="@+id/hintob"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="The complete message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/timeebe"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:text="time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/hintob"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/fullnewsb"
+            android:textSize="15sp"
+            android:text="News Headlines elelellnnnnnnnnnnnnneelel drlkeeeeeeeeeeeer rrrlr;r;rroeoepeppepeppe epe ekp ;kfk epkr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/linlab"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fullnewsb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/showstarb"
+                app:srcCompat="@drawable/star"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/veryimporb"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:text="this message is very important!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/linlab"
+            android:id="@+id/newsdateb"
+            android:textColor="#000000"
+            android:text="11/23/34"
+            android:textSize="10sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/writerb"
+            android:layout_below="@+id/linlab"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="15dp"
+            android:layout_alignBottom="@+id/newsdate"
+            android:layout_toRightOf="@+id/headimage"
+            android:text="writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/intoinfob"
+        android:src="@drawable/goahead"
+        android:layout_below="@+id/infotext"
+        android:layout_width="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="30dp"/>
+</RelativeLayout>

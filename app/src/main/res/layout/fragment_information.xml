@@ -1,0 +1,170 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mycompany.myapp.thetframework.Information">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        app:layout_constraintBottom_toTopOf="@+id/infotop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/inforecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <android.support.design.widget.FloatingActionButton
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@drawable/adde"
+            android:id="@+id/adde"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="55dp"
+            android:layout_height="55dp" />
+        <android.support.design.widget.FloatingActionButton
+            app:srcCompat="@drawable/ic_cached_black_24dp"
+            android:layout_marginRight="80dp"
+            android:id="@+id/refresh"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relwriteinfo"
+        android:visibility="visible"
+        android:background="@color/blacki_overlaye"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/checkyurgent"
+            android:layout_marginTop="10dp"
+            android:text="is this message urgent?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            app:srcCompat="@drawable/deleteit"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/cancel_ininfo"
+            android:layout_marginRight="30dp"
+            android:layout_alignBottom="@+id/checkyurgent"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <RelativeLayout
+            android:layout_below="@+id/checkyurgent"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/edinformation"
+            android:textColor="#0a2149"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#0a2149"
+            android:background="@android:drawable/editbox_background"
+            android:layout_width="250dp"
+            android:backgroundTint="#ffffff"
+            android:layout_height="wrap_content"
+            android:hint="please enter information"/>
+            <ImageView
+                android:id="@+id/summitinfo"
+                android:layout_alignBottom="@+id/edinformation"
+                android:layout_toRightOf="@+id/edinformation"
+            android:layout_marginRight="60dp"
+            android:layout_gravity="end|right"
+                app:srcCompat="@drawable/goahead"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:id="@+id/infotop"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/headlines"
+            android:textColor="@color/whitee"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" The Headlines" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lindot"
+            android:layout_alignBottom="@+id/headlines"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/load"
+                android:visibility="visible"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/groupimageback"
+                android:layout_alignBottom="@+id/jane"
+                android:layout_toRightOf="@+id/jane"
+                android:text="."
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/loadb"
+                android:layout_marginLeft="3dp"
+                android:layout_alignBottom="@+id/jane"
+                android:layout_toRightOf="@+id/load"
+                android:text="."
+                android:background="@drawable/groupimageback"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/loadc"
+                android:layout_marginLeft="3dp"
+                android:layout_alignBottom="@+id/jane"
+                android:layout_toRightOf="@+id/loadb"
+                android:text="."
+                android:background="@drawable/groupimageback"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

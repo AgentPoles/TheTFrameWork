@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/userimage"
+    android:layout_marginTop="10dp"
+    app:srcCompat="@drawable/ic_account_circle_black_24dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="90dp"
+    android:layout_height="90dp" />
+    <android.support.design.widget.FloatingActionButton
+        app:backgroundTint="@color/blacki_overlay"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:layout_alignRight="@+id/userimage"
+        android:layout_alignEnd="@+id/userimage"
+        android:layout_alignBottom="@+id/userimage"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:id="@+id/layerone"
+        android:layout_below="@+id/userimage"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="Paul Ahaimogu lawrence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layertwo"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/layerone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageusernumber"
+            app:srcCompat="@drawable/phone"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@+id/imageusernumber"
+            android:id="@+id/usernumber"
+            android:cursorVisible="false"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/imageusernumber"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="Paul Ahaimogu lawrence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layerthree"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/layertwo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageuseremail"
+            app:srcCompat="@drawable/mail"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:id="@+id/useremaile"
+            android:cursorVisible="false"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/imageuseremail"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="Paul Ahaimogu lawrence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layerfour"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/layerthree"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageuserdob"
+            app:srcCompat="@drawable/baby"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/hinta"
+            android:layout_toRightOf="@id/imageuserdob"
+            android:textAllCaps="true"
+            android:text="D.O.B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="7dp"
+            android:id="@+id/userdob"
+            android:cursorVisible="false"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/hinta"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="May 30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layerfive"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/layerfour"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageuserskill"
+            app:srcCompat="@drawable/skill"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/hintb"
+            android:layout_toRightOf="@id/imageuserskill"
+            android:textAllCaps="true"
+            android:text="Skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:id="@+id/userskill"
+            android:cursorVisible="false"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/hintb"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="Photographer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/layersix"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/layerfive"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hintc"
+            android:textAllCaps="true"
+            android:text="Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/userstatus"
+            android:cursorVisible="false"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/hintc"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text=" Hi, whats the latest gist about you?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        app:srcCompat="@drawable/edite"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+</RelativeLayout>

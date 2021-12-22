@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="5dp"
+        android:id="@+id/innerdocard"
+        android:elevation="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/pendinginnergrid"
+        android:layout_margin="2dp"
+        app:srcCompat="@drawable/timeb"
+        android:layout_alignRight="@id/docimage"
+        android:layout_width="10dp"
+        android:layout_height="10dp" />
+    <ImageView
+        android:id="@+id/docimage"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/docs"
+        android:layout_width="50dp"
+        android:layout_height="40dp" />
+    <ImageView
+        android:id="@+id/readstateinnergrid"
+        android:layout_margin="2dp"
+        app:srcCompat="@drawable/leaf"
+        android:layout_alignRight="@id/docimage"
+        android:layout_below="@id/docimage"
+        android:layout_width="10dp"
+        android:layout_height="10dp" />
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:textColor="#eee6a4"
+        android:textSize="9dp"
+        android:padding="3dp"
+        android:background="@drawable/backii"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/innerdocard"
+        android:id="@+id/docname"
+        android:text="doc name"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    <RelativeLayout
+        android:id="@+id/poleee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/begginers"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_marginTop="0dp"
+            android:id="@+id/loica"
+            android:text="."
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_marginTop="0dp"
+            android:id="@+id/loicb"
+            android:layout_marginLeft="3dp"
+            android:text="."
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="0dp"
+            android:id="@+id/loicc"
+            android:layout_marginLeft="3dp"
+            android:text="."
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="0dp"
+            android:id="@+id/loicd"
+            android:layout_marginLeft="3dp"
+            android:text="."
+            android:textColor="@android:color/holo_purple"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="0dp"
+            android:id="@+id/loice"
+            android:layout_marginLeft="3dp"
+            android:text="."
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/poles"
+        android:layout_above="@+id/begginers"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="0dp"
+            android:id="@+id/loid"
+            android:text="p"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/beetle"
+            android:layout_marginTop="0dp"
+            android:id="@+id/loidb"
+            android:layout_marginLeft="3dp"
+            android:text="0"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:layout_gravity="bottom"
+            android:layout_marginTop="0dp"
+            android:id="@+id/loidc"
+            android:layout_marginLeft="3dp"
+            android:text="l"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="0dp"
+            android:id="@+id/loidd"
+            android:layout_marginLeft="3dp"
+            android:text="e"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="0dp"
+            android:id="@+id/loide"
+            android:layout_marginLeft="3dp"
+            android:paddingTop="0dp"
+            android:text="s"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+<TextView
+    android:id="@+id/maary"
+    android:layout_below="@+id/poles"
+    android:textColor="@android:color/holo_red_light"
+    android:layout_centerHorizontal="true"
+    android:text="yahweh behind it all!"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+        <ImageView
+            android:id="@+id/ski"
+            android:padding="100dp"
+            app:srcCompat="@drawable/ski"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.myapp.thetframework">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".MApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_brainstormers"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Intro"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".InnerAnswer" />
+        <activity android:name=".Splashit" />
+
+        <service
+            android:name=".process"
+            android:exported="false" />
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Startup" />
+        <activity
+            android:name=".Realstartup"
+            android:label="@string/title_activity_realstartup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DoFirst"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Homee"
+            android:label="@string/title_activity_homee"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".MyDataService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".MyJobService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".ServiceRestartReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.mycompany.myapp.thetframework.MyDataService" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".LoadOnceReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.mycompany.myapp.thetframework.LoadOnceReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".LoadOnceService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".YourSettings"
+            android:label="@string/title_activity_your_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".InnerDocuments" />
+
+        <service
+            android:name=".UploadOne"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".UploadAnswer"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ViewImageActivity" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".UploadUserDetails"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Main2Activity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/relothertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/daterb"
+                android:visibility="gone"
+                android:textColor="#eee6a4"
+                android:padding="7dp"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:text="may 17, 2034"
+                android:background="@drawable/chatreborn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/daterb"
+                android:background="@drawable/newchat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/othertext"
+                    android:visibility="visible"
+                    android:layout_marginLeft="10dp"
+                    android:text="rete dddkkkkkkkkkkkkkdddddddddddkkkdkkdk"
+                    android:textSize="16sp"
+
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_below="@+id/othertext"
+                    android:layout_alignRight="@+id/othertext"
+                    android:text="2:341am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/relyourcomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/daterc"
+                android:visibility="gone"
+                android:textColor="#eee6a4"
+                android:padding="7dp"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:text="may 17, 2034"
+                android:background="@drawable/chatreborn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/daterc"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/chaty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/youcomment"
+                    android:layout_marginLeft="10dp"
+                    android:text="rete dddkkkkkkkkkkkkkdddddddddddkkkdkkdk"
+                    android:textSize="16sp"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_below="@+id/youcomment"
+                    android:layout_alignRight="@+id/youcomment"
+                    android:text="2:341am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

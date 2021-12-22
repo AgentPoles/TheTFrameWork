@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/classorfull"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/smaller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<TextView
+    android:padding="7dp"
+    android:text="happyd"
+    android:textColor="#eeeeee"
+    android:id="@+id/classbody"
+    android:textAlignment="center"
+    android:background="@drawable/tipob"
+    android:layout_margin="1dp"
+    android:textSize="13sp"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:layout_width="60dp"
+    android:layout_height="35dp" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/read"
+            android:layout_alignRight="@+id/classbody"
+            app:srcCompat="@drawable/ic_here"
+            android:layout_width="13dp"
+            android:layout_height="13dp" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/blocked"
+            android:layout_alignRight="@+id/classbody"
+            app:srcCompat="@drawable/ic_shield"
+            android:layout_width="14dp"
+            android:layout_height="14dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bigger"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="7dp"
+            android:text="happyd"
+            android:textColor="#eeeeee"
+            android:id="@+id/bigclassbody"
+            android:textAlignment="center"
+            android:background="@drawable/tipob"
+            android:layout_margin="1dp"
+            android:textSize="16sp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_width="70dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/bigread"
+            android:layout_alignRight="@+id/bigclassbody"
+            app:srcCompat="@drawable/ic_here"
+            android:layout_width="14dp"
+            android:layout_height="14dp" />
+        <ImageView
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:id="@+id/bigblocked"
+            android:layout_alignRight="@+id/bigclassbody"
+            app:srcCompat="@drawable/ic_shield"
+            android:layout_width="14dp"
+            android:layout_height="14dp" />
+    </RelativeLayout>
+</RelativeLayout>

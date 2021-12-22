@@ -1,0 +1,65 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mycompany.myapp.thetframework.FragmentSecond">
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_margin="20dp"
+            app:srcCompat ="@drawable/teaching"
+            android:id="@+id/imagee"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/assk"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:text="Do i have answers to some of the questions asked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="55dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/stormit"
+            android:layout_alignParentRight="true"
+            android:textSize="25sp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginRight="30dp"
+            android:text="i can teach it!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

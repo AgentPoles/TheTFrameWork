@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/ic_woodasvg"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/settingsfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:srcCompat="@drawable/messagetools"
+        android:id="@+id/setto"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+        <TextView
+            android:layout_toRightOf="@id/setto"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorAccent"
+            android:text="settings"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <CheckBox
+    android:layout_below="@id/setto"
+        android:textSize="18sp"
+        android:id="@+id/checkysound"
+        android:text="Sound"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/settingsecond"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/settingsfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/settingsblock"
+            android:hint="Block a frequency "
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:background="@drawable/backing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/settingsblock"
+            android:text="this will prevent you from getting updates and notifications from the class that has this frequency unless you go in yourself"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/settingfourth"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/settingthiird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/settingsremove"
+            android:hint="leave a class "
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:background="@drawable/backing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/settingsremove"
+            android:text="this will remove you from the class having the frequency  totally"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/settingthiird"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/settingsecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/settingsunblock"
+            android:hint="unblock a class "
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:background="@drawable/backing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/settingsunblock"
+            android:text="this will enable you to get updates and notifications from a blocked class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/soundgoahead"
+        android:layout_alignRight="@id/settingfourth"
+        android:layout_below="@+id/settingfourth"
+        app:srcCompat="@drawable/goahead"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+</RelativeLayout>
